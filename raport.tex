@@ -1,0 +1,200 @@
+\documentclass[10pt,a4paper,]{report}
+\usepackage[french]{babel}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{shapepar}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{collcell}
+\usepackage{lettrine}
+\usepackage{listings}
+\newcommand{\includepic}[1]{\includegraphics[width=8cm,
+	height=8cm, keepaspectratio]{#1}}
+\newcolumntype{i}{@{\hspace{1ex}}
+	>{\collectcell\includepic}c<{\endcollectcell}}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{bbm}
+\usepackage{bbold}
+\usepackage{babel}
+\usepackage{setspace}
+\usepackage{fancybox}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage[french]{babel}
+\usepackage[dvips, lmargin=2.5cm, rmargin=2.5cm, tmargin=3.5cm, bmargin=3cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[listing]
+
+\newcounter {subsubsubsection}[subsubsection]
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\newtheorem{Th}{\sc \bf Theorem}[section]
+\newtheorem{thm}[Th]{\bf Théor\`eme}
+\newtheorem{cor}[Th]{\bf Corollory}
+\newtheorem{lem}[Th]{\bf Lemme}
+\newtheorem{prop}[Th]{\bf Proposition}
+\newtheorem{notat}[Th]{ Notation}
+\newtheorem{nota}[Th]{}
+\newtheorem{notatDef}[Th]{ Notation et Définition}
+\newtheorem{Def}[Th]{\bf Définition}
+\newtheorem{Defs}[Th]{\bf Définitions}
+\newtheorem{defprop}[Th]{\bf Proposition et Définition}
+\newtheorem{thd}[Th]{\bf Théorème et Définitions}
+\newtheorem{Dep}[Th]{\bf  Définitions  et propriétés}
+\newtheorem{rem}[Th]{ Remarque}
+\newtheorem{rems}[Th]{ Remarques}
+\newtheorem{ex}[Th]{ Exemple}
+\newtheorem{exs}[Th]{ Exemples}
+%\newtheorem{Q}[Th]{\bf Question}
+\newtheorem{dfn}[Th]{\bf Définitions}
+\newtheorem{nots}{\bf Notes}
+\newcommand{\pr} { Preuve }
+\newcommand{\dem} { {\bf Démonstration} }
+\newcommand{\co} {{ Conclusion   }}
+\newcommand{\ra} {{ Rappel   }}
+\newtheorem{exe}[Th]{ Exercice}
+\newtheorem{exes}[Th]{ Exercices}
+\newtheorem{con}[Th]{ conséquence}
+\newtheorem{Not}[Th]{ Notations et remarques}
+\newtheorem{abs}[Th]{\bf Abstract}
+\newtheorem{Nota}[Th]{ Notations}
+\newtheorem{propr}[Th]{ Propriétés}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\MAT}{$$
+	\left(
+	\begin{array}}
+\newcommand{\mat}{\end{array}
+	\right)
+	$$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\newcommand{\ga}{{\mathfrak{a}}}
+\newcommand{\gm}{{\mathfrak{m}}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Proof{{\parindent0pt {\bf Proof.\ }}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+\newcommand{\Z }{\field{Z}}
+\newcommand{\N }{\field{N}}
+\newcommand{\K}{\field{K}}
+\newcommand{\F }{\field{F}}
+\newcommand{\Q}{\field{Q}}
+\newcommand{\gp}{{\mathfrak{p}}}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1mu}\mkern 1mu}
+\def\PP{I\!\! P}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Ext{{\rm Ext}}
+\def\Tor{{\rm Tor}}
+\def\dim{{\rm dim}}
+\def\g{{\rm G-dim}}
+\def\wdim{{\rm wdim}}
+\def\gldim{{\rm gldim}}
+\def\sup{{\rm sup}}
+\def\inf{{\rm inf}}
+\def\qf{{\rm qf}}
+\def\Im{{\rm Im}}
+\def\Coker{{\rm Coker}}
+\def\Ker{{\rm Ker}}
+\def\beq{\begin{eqnarray*}}
+	\def\eeq{\end{eqnarray*}}
+\def\htt{{\rm ht}}
+\def\max{{\rm max}}
+\def\Spec{{\rm Spec}}
+\def\pd{{\rm pd}}
+\def\fd{{\rm fd}}
+\def\id{{\rm id}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Rom #1{\uppercase\expandafter{\romannumeral #1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\cqfd}
+{\hspace{0.5cm}
+	\rule{2mm}{2mm}%
+	\medbreak%
+	\par%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks, hyperindex, bookmarks, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
+\footskip = 60 pt
+\begin{document}
+	\includegraphics[height=2.5cm]{facultdescien.png} \hfill{\includegraphics[height=2.5cm]{téléchargement.png}}
+	\\
+	\\
+	\begin{center}
+		Université de Montpellier\\
+		Faculté des Sciences \\
+		\vspace*{2.0cm}
+		
+		\textbf{PROJET HMMA307 }\\
+		\vspace{1.5cm}
+		
+		Spécialité : \textsl{MIND/SIAD} \\
+		\vspace{1.5cm}
+		Etudiant :\\
+	
+		\textit{\textbf{ Cherif AMGHAR}}\\
+		\vspace*{3cm} 
+		Sous le thème 
+		\rule{16cm}{4pt}\\
+		\begin{cursive}
+			\textcolor{blue}{\textbf{\textit{\Large{Modèles mixtes linéaires}}}} 
+		\end{cursive}
+		\rule{14cm}{3pt}\\
+		\vspace*{1.5cm}
+		Enseignant: 
+		\vspace*{1.5cm}
+		$$
+		\begin{array}{lll}
+
+        \textit{\textbf{Pr.  Joseph Salmon  }}
+	    \end{array}
+		$$
+		
+		
+		\vspace*{1cm}
+		08 Novembre 2020
+	\end{center}
+    \newpage
+
+\begin{spacing}{1}
+
+\tableofcontents
+
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{2pt}
+\fancyhf{}
+\fancyfoot[L]{ \textit{\texttt{Projet HMMA307} $2020$}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\texttt{AMGHAR Cherif}}
+
+\renewcommand{\headrulewidth}{2pt}
+\fancyhead[C]{{\rightmark}}
+\newpage
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+ 
+
+
+\begin{thebibliography}{99}
+
+
+\end{spacing}
+
+\end{document}
