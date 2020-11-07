@@ -1,0 +1,115 @@
+% % Headings
+\ newcommand { \ lecture } [4] {
+   \ pagestyle {myheadings}
+   \ thispagestyle {plain}
+   \nouvelle page
+   \ setcounter {page} {1}
+   \ noindent
+   \ begin { center }
+   \ framebox {
+      \ vbox { \ vspace {2mm}
+    \ hbox à 6,28 pouces {{ \ bf # 1 \ hfill }}
+       \ vspace {6mm}
+       \ hbox à 6,28 pouces {{ \ Large  \ hfill # 2   \ hfill }}
+       \ vspace {6mm}
+       \ hbox à 6.28in {{ \ it Cours: # 3 \ hfill Scribes: # 4}}
+      \ vspace {2mm}}
+   }
+   \ end { centre }
+   \ markboth {# 1} {# 1}
+   \ vspace * {4mm}
+}
+
+% % Longueurs importés
+\ setlength { \ oddsidemargin } {0,25 po }
+\ setlength { \ evensidemargin } {- 0,25 pouce }
+\ setlength { \ topmargin } {- 0,6 pouce }
+\ setlength { \ textwidth } {6,5 pouces }
+\ setlength { \ textheight } {8,5 pouces }
+\ setlength { \ headsep } {0,75 pouce }
+\ setlength { \ parindent } {0 dans}
+\ setlength { \ parskip } {0,1 pouce }
+
+%% Images
+\ DeclareGraphicsExtensions {.eps, .pdf, .png, .jpg}
+
+% % Algorithmes
+% \ renewcommand {\ algorithmicrequire} {\ textbf {Entrée:}}
+% \ renewcommand {\ algorithmicensure} {\ textbf {Sortie:}}
+% \ renewcommand {\ algorithmiccomment} [1] {$ // $ \ textit {\ small {# 1}}}
+
+% % Theorems
+\ théoremstyle {plain}
+\ newtheorem {definition} {Definition}
+\ newtheorem {exemple} {Exemple}
+\ newtheorem {remarque} {Remarque}
+\ newtheorem {corollaire} {Corollaire}
+
+\ newtheorem {théorème} {théorème}
+\ newtheorem {proposition} {Proposition}
+\ newtheorem {lemme} {Lemme}
+
+% % Raccourcis mathématiques personnels
+% à des fins d'édition
+\ newcommand { \ todo } [1] { \ textbf { TODO: } # 1}
+% autres
+\ newcommand { \ bb } { \ mathbbm }
+\ newcommand { \ proba } { \ bb P}
+\ newcommand { \ esp } { \ bb E}
+\ newcommand { \ ind } { \ bb 1}
+\ newcommand { \ R } { \ mathbb {R}}
+\ newcommand { \ E } { \ mathbb {E}}
+\ newcommand { \ N } { \ mathds {N}}
+\ newcommand { \ argmin } { \ mathop { \ mathrm {arg \, min}}}
+\ newcommand { \ trans } [1] {{# 1} ^ \ intercal } % transposition
+\ newcommand { \ cx } { \ mathcal {X}}
+\ newcommand { \ cy } { \ mathcal {Y}}
+\ newcommand { \ ch } { \ mathcal {H}}
+\ newcommand { \ dn } { \ mathcal {D} _n}
+
+\ newcommand { \ nl } {} % \ vspace {11pt}}
+\ renewcommand { \ phi } { \ varphi }
+% \ renewcommand {\ epsilon} {\ varepsilon}
+
+\ newcommand { \ abbr } [1] { \ textbf { # 1 }}
+% \ renewcommand {\ mathbb} [1] {\ mathds {# 1}}
+\ newcommand { \ intro } [1] { \ textit { # 1 }}
+
+% pour supprimer le symbole CQFD à la fin des preuves:
+% \ renewcommand {\ qedsymbol} {}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Raccourcis et commandes
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ newcommand { \ subgrad } { \ partial }
+\ newcommand { \ alp } { \ alpha }
+\ newcommand { \ walp } {w_ { \ alpha }}
+\ newcommand { \ wst } {w ^ {*}}
+\ newcommand { \ malp } {(1- \ alp )}
+\ newcommand { \ norm } [1] { \ gauche \ | # 1 \ droite \ | }
+\ newcommand { \ scalprod } [2] { \ left <{# 1, # 2} \ right >}
+\ newcommand { \ lambtwo } { \ frac { \ lambda } {2}}
+\ newcommand { \ sgrf } { \ subgrad f}
+\ newcommand { \ Ll } { \ mathcal {L}}
+\ newcommand { \ F } { \ mathcal {F}}
+\ DeclareMathOperator { \ diag } {diag}
+\ DeclareMathOperator { \ Tr } {Tr}
+\ DeclareMathOperator { \ Var } {Var}
+\ DeclareMathOperator { \ Id } {Id}
+\ newcommand { \ bbR } { \ mathbb {R}}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Images
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ graphicspath {{images /}, {prebuiltimages /}}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Couleurs
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ definecolor {test} {rgb} {0.64,0.16,0.16}
+\ definecolor {vsomb_col} {rgb} {0.00,0.57,0.1}
+\ definecolor {fb_col} {rgb} {0.25,0.41,0.88}
