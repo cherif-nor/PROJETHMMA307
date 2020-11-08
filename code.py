@@ -18,7 +18,7 @@ import seaborn as sns
 ####################################
 # Download dataset and delet column
 ####################################
-Estua = pd.read_csv("C:/Users/AMGHAR MED CHERIF/Desktop/python project/PROJETHMMA307/data\Estuaries.csv")#importation des données
+Estua = pd.read_csv("C:/Users/AMGHAR MED CHERIF/Desktop/python project/PROJETHMMA307/data/Estuaries.csv")#importation des données
 print(type(Estua))#Format des données
 print(Estua.shape)#Taille du dataframe
 print(Estua)#Affichage des données (il y a une colonne en trop)
