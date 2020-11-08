@@ -188,11 +188,46 @@
 \newpage
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
+Un modèle linéaire mixte est un modèle pour lequel le modèle comprend à la fois des effets fixes et des
+effets aléatoires. Les MLM incluent des variables à effets fixes et aléatoires. Le mélange entre les deux est à
+l'origine du nom. Les effets fixes décrivent les relations entre les covariables et la variable dépendante pour
+une population entière, les effets aléatoires sont spécifiques à l'échantillon.\\
+En d'autres termes, un effet aléatoire est un effet dont nous ne voulons pas généraliser les propriétés (les
+modalités ont été choisies de manière aléatoire dans quelque chose de plus grand) et un effet fixe est un
+effet dont on veut généraliser les propriétés. Il s'agit de la variable manipulée dont nous avons choisi les
+niveaux spécifiques.
+
+
+Les données qu'on analyse ici sont des dénombrements d'invertébrés sur 3-4 sites dans chacun des 7 estuaires (choisis au hasard). Ici, les estuaires sont l'effet aléatoire, car il existe un grand nombre d'estuaires possibles, et on n'échantillonne que quelques-uns d'entre eux au hasard, mais on aime faire des inférences sur les estuaires en général.\\
+Tout au long de ce projet, on s'intéresse à deux  principaux types de modèles linéaires mixtes, modèle mixtes à un effets aléatoires et le deuxième pour deux effets aléatoires, on explique les sorties sous python.
+
+\newpage
+\chapter*{Modèles mixtes linéaires avec un effet aléatoire }
+ On analyse un ensemble de données visant à tester l'effet de la pollution de l'eau sur l'abondance de certains invertébrés marins subtidaux en comparant des échantillons d'estuaires modifiés et vierges. Comme le nombre total est important, on suppose que les données sont continues.
+\\
+Modèles mixtes à un effet aléatoire est une introduction aux modèles mixtes pour une réponse continue avec un effet aléatoire . Vous apprendrez à vérifier les hypothèses et à faire des inférences, y compris le bootstrap paramétrique.
+l'équation du modèle est: $$y_{ij} = \beta_0 + u_{0i} + \beta_1 \times t_{ij} + \varepsilon_{ij}$$
+
+\section{Propriétés des modèles mixtes}
+Les modèles mixtes font des hypothèses importantes:\\
+-Le observé y sont indépendants, conditionnés par certains prédicteurs X.\\
+-La réponse y sont normalement distribués sous condition de certains prédicteurs X.\\
+-La réponse y a une variance constante, conditionnelle à certains prédicteurs X.\\
+-Il existe une relation linéaire entre y et les prédicteurs X et effets aléatoires z.\\
+-Effets aléatoires z sont indépendants de y.\\
+-Effets aléatoires z sont normalement distribués.\\
+
+\section{Ajustement du modèle: un effet fixe et aléatoire}
+Dans cet ensemble de données, on a un effet fixe (Modification; modifié vs vierge) et un effet aléatoire (Estuaire). Pour ajuster un modèle d'abondance totale.
+
+
 
  
 
 
 \begin{thebibliography}{99}
+
+
 
 
 \end{spacing}
